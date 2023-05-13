@@ -20,10 +20,10 @@ function encrypt() {
     var encryptxt = encryptxt.replace(/i/gim, "imes");
     var encryptxt = encryptxt.replace(/a/gim, "ai");
     var encryptxt = encryptxt.replace(/u/gim, "ufat");
-    // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-     // "g" se utiliza para alterar una sentencia completa
-    // "i" es para que no se distinga entre minusculas y mayusculas
-    // "m" es para alterar o modificar varias lineas
+    /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+       "g" se utiliza para alterar una sentencia completa
+       "i" es para que no se distinga entre minusculas y mayusculas
+       "m" es para alterar o modificar varias lineas*/
     document.getElementById("mensaje").style.backgroundImage = "none";
     document.getElementById("mensaje").innerHTML = encryptxt;
     }
@@ -45,10 +45,10 @@ function desencrypt() {
     var desencryptxt = desencryptxt.replace(/imes/gim, "i");
     var desencryptxt = desencryptxt.replace(/ai/gim, "a");
     var desencryptxt = desencryptxt.replace(/ufat/gim, "u");
-     // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-     // "g" se utiliza para alterar una sentencia completa
-     // "i" es para que no se distinga entre minusculas y mayusculas
-     // "m" es para alterar o modificar varias lineas
+     /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "g" se utiliza para alterar una sentencia completa
+        "i" es para que no se distinga entre minusculas y mayusculas
+        "m" es para alterar o modificar varias lineas*/
    document.getElementById("mensaje").style.backgroundImage = "none";
     document.getElementById("mensaje").innerHTML = desencryptxt;
 }
